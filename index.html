@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery - Discover Famous Paintings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Art Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#paintings">Paintings</a></li>
+                </ul>
+            </nav>
+            <p>Explore the world of art through famous paintings and their stories.</p>
+        </div>
+    </header>
+
+    <section id="home" class="container">
+        <h2>Welcome to the Art Gallery</h2>
+        <p>Immerse yourself in the beauty and history of some of the world's most famous paintings. Discover the stories behind these masterpieces, learn about the artists, and explore their contributions to the world of art.</p>
+        <a href="#paintings" class="btn">Explore Paintings</a>
+    </section>
+
+    <section id="paintings" class="container">
+        <h2>Featured Paintings</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="#monalisa">
+                    <img src="monalisa.jpeg" width="80px" alt="Mona Lisa">
+                    <h3>Mona Lisa</h3>
+                </a>
+                <p>Leonardo da Vinci</p>
+            </div>
+            <div class="gallery-item">
+                <a href="#starrynight">
+                    <img src="stari.jpeg" width="80px" alt="Starry Night">
+                    <h3>Starry Night</h3>
+                </a>
+                <p>Vincent van Gogh</p>
+            </div>
+            <div class="gallery-item">
+                <a href="#thepersistenceofmemory">
+                    <img src="persi.jpg" width="80px" alt="The Persistence of Memory">
+                    <h3>The Persistence of Memory</h3>
+                </a>
+                <p>Salvador Dalí</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="monalisa" class="container painting-detail">
+        <h2>Mona Lisa</h2>
+        <img src="monalisa.jpeg" width="150px" alt="Mona Lisa">
+        <div class="painting-info">
+            <h3>About the Painting</h3>
+            <p><strong>Mona Lisa</strong>, also known as <em>La Gioconda</em>, is a half-length portrait painting by the Italian Renaissance artist <strong>Leonardo da Vinci</strong>. It has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world."</p>
+            <p>The painting's composition, especially the use of sfumato, a technique of blending colors and tones, was highly innovative at the time. The mysterious expression on the subject's face, the serene background landscape, and the illusionistic effects created by the delicate painting style have made this artwork a subject of fascination for centuries.</p>
+            <p>The identity of the woman in the painting has been widely debated, with most scholars believing her to be <strong>Lisa Gherardini</strong>, a woman from Florence and the wife of wealthy silk merchant Francesco del Giocondo, which is why the painting is also known as <em>La Gioconda</em>.</p>
+            <p><strong>Date:</strong> c. 1503–1506</p>
+            <p><strong>Medium:</strong> Oil on poplar panel</p>
+            <p><strong>Dimensions:</strong> 77 cm × 53 cm</p>
+            <p><strong>Location:</strong> Louvre Museum, Paris</p>
+        </div>
+    </section>
+
+    <section id="starrynight" class="container painting-detail">
+        <h2>Starry Night</h2>
+        <img src="stari.jpeg" width="150px" alt="Starry Night">
+        <div class="painting-info">
+            <h3>About the Painting</h3>
+            <p><strong>Starry Night</strong> is one of the most recognizable paintings by the Dutch artist <strong>Vincent van Gogh</strong>. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an idealized village.</p>
+            <p>Van Gogh painted the work during his stay at the asylum in Saint-Rémy-de-Provence, where he was recovering from a mental health crisis. The swirling patterns in the sky, the vibrant colors, and the cypress tree in the foreground are all characteristic of Van Gogh's emotional intensity and his connection to nature.</p>
+            <p>The painting has been interpreted in various ways, with some seeing it as a reflection of Van Gogh's troubled mental state, while others view it as a depiction of a tranquil night scene. Regardless of the interpretation, Starry Night remains a testament to Van Gogh's artistic genius and his unique ability to capture the beauty and complexity of the natural world.</p>
+            <p><strong>Date:</strong> June 1889</p>
+            <p><strong>Medium:</strong> Oil on canvas</p>
+            <p><strong>Dimensions:</strong> 73.7 cm × 92.1 cm</p>
+            <p><strong>Location:</strong> Museum of Modern Art, New York City</p>
+        </div>
+    </section>
+
+    <section id="thepersistenceofmemory" class="container painting-detail">
+        <h2>The Persistence of Memory</h2>
+        <img src="persi.jpg" width="150px" alt="The Persistence of Memory">
+        <div class="painting-info">
+            <h3>About the Painting</h3>
+            <p><strong>The Persistence of Memory</strong> is one of the most famous works by Spanish surrealist artist <strong>Salvador Dalí</strong>. Painted in 1931, it is known for its melting clocks, which have become an iconic symbol of the surrealist movement. The painting challenges conventional perceptions of time, space, and reality.</p>
+            <p>Dalí's work is often seen as a reflection of his interest in the subconscious mind and dreams. The melting clocks suggest the fluidity and unreliability of time, while the eerie, dream-like landscape adds to the sense of otherworldliness. This painting has been interpreted as a commentary on the impermanence of time and the persistence of memory.</p>
+            <p><strong>Date:</strong> 1931</p>
+            <p><strong>Medium:</strong> Oil on canvas</p>
+            <p><strong>Dimensions:</strong> 24 cm × 33 cm</p>
+            <p><strong>Location:</strong> Museum of Modern Art, New York City</p>
+        </div>
+    </section>    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Smooth Scrolling
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Filter Function
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>  
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background-color: #000; /* Background hitam */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222; /* Latar belakang gelap untuk header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ffcc00; /* Warna kuning untuk judul */
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #333; /* Warna latar belakang untuk item galeri */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-item h3 {
+    margin: 10px 0 5px;
+    color: #ffcc00;
+}
+
+.painting-detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.painting-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 30px;
+    border-radius: 8px;
+    flex-basis: 40%;
+}
+
+.painting-info {
+    flex-basis: 60%;
+}
+
+.painting-info h3 {
+    margin-top: 0;
+    color: #ffcc00;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #222;
+    color: #070707;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+/* Border untuk gambar lukisan */
+.gallery-item {
+    position: relative;
+    border: 80px solid #110e0e; /* Border putih tipis untuk gambar */
+    border-radius: 80px;
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover {
+    border-color: #ffcc00; /* Border berubah warna saat hover */
+    box-shadow: 0 80px 80px rgba(0, 0, 0, 0.3); /* Efek bayangan saat hover */
+}
+
+.gallery-item h3 {
+    margin: 80px 0 80px;
+    color: #ffcc00;
+}
